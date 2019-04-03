@@ -23,4 +23,18 @@ public class SuccessServlet extends HttpServlet {
         out.print("</body>");
         out.print("</head>");
     }
+
+protected void doPost(HttpServletRequest request,
+            HttpServletResponse response) throws ServletException, IOException {
+        String user = request.getParameter("user");
+        PrintWriter out = response.getWriter();
+        out.print("<html><head>");
+        out.print("<title>My First Servlet</title>");
+        out.print("</head>");
+        out.print("<body>");
+        out.print("<h1>Hi Welcome " + user + "</h1>");
+        out.print("</body>");
+        out.print("</head>");
+    }
+
 } 
