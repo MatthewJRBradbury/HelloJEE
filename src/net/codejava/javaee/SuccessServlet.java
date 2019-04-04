@@ -11,7 +11,7 @@ import javax.servlet.annotation.WebServlet;
 @WebServlet("/SuccessServlet")
 public class SuccessServlet extends HttpServlet {
     
-protected void doGET(HttpServletRequest request,
+protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
         String user = request.getParameter("user");
         PrintWriter out = response.getWriter();
