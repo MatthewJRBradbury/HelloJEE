@@ -1,2 +1,2 @@
-<jsp:include page="/CurrentDate" />
+p:include page="/Servlet1" />
 
