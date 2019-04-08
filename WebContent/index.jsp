@@ -1,2 +1,2 @@
-p:include page="/Servlet1" />
+<jsp:include page="/Servlet1" />
 
