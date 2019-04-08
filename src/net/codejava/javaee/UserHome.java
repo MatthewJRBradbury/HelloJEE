@@ -18,7 +18,7 @@ throws ServletException, IOException {
       PrintWriter out = response.getWriter();
       out.print("<html><head>");
       out.print("<title>User Home</title><body>");
-      RequestDispatcher dispatcher = request.getRequestDispatcher("Welcome");
+      RequestDispatcher dispatcher = request.getRequestDispatcher("WelcomeMessage");
       request.setAttribute("name", "Arun");
       dispatcher.include(request,response);
       out.print("<h2 Style='color:green; margin-left:50%; margin-top:20%'>This is the User home</h2>");
