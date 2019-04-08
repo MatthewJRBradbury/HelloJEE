@@ -1,1 +1,2 @@
-<jsp:include page="/UserHome" />
+<jsp:include page="/CurrentDate" />
+
