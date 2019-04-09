@@ -30,6 +30,7 @@ if ("admin".equalsIgnoreCase(userName) && "admin".equals(password)){
        dispatcher = request.getRequestDispatcher("CsSuccessServlet");
        dispatcher.forward(request, response);
 } else {
+       request.setAttribute("name", "admin");
        dispatcher = request.getRequestDispatcher("CsErrorServlet");
        dispatcher.forward(request, response);
 }

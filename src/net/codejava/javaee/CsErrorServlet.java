@@ -15,7 +15,7 @@ protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         out.print("<html><head>");
-        out.print("<title>Error: </title>");
+        out.print("<title>Error: " + request.getAttribute("name") + " </title>");
         out.print("</head>");
         out.print("<body>");
         out.print("<h1>No parameters can be Null (or) empty</h1>");
