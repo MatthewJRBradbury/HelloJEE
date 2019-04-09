@@ -7,7 +7,7 @@
 </head>
 <body>
         <h2>Login</h2>
-        <form method="post" action="LoginServlet">
+        <form method="post" action="CsLoginServlet">
                 <table>
                         <tr>
                                 <td><label for="uname">Username</label></td>
